@@ -3,13 +3,24 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F8F8F8;
+    background-color: black; /* Side columns remain black */
     color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered Container */
+.container {
+    max-width: 1200px; /* Increased width to take up more space */
+    width: 100%;
+    background: #F8F8F8; /* Light background for main content */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header */
 header {
-    background: #1B4D3E; /* Dark Green */
+    background: #1B4D3E;
     color: white;
     text-align: center;
     padding: 20px;
@@ -30,6 +41,11 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    display: none;
+}
+
+#menu.show {
+    display: block;
 }
 
 nav ul li {
@@ -42,19 +58,26 @@ nav a {
     text-decoration: none;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
+nav a.active {
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    color: #FFD700;
 }
 
-/* Cards Section - Two Columns */
+/* Layout Grid */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
 }
 
-/* Card Styling */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Course Cards */
 .card {
     background: white;
     padding: 15px;
@@ -63,10 +86,9 @@ main {
     text-align: center;
 }
 
-/* Beach Image - Set to 1/4 Size */
 .card img {
-    width: 25%;  /* 1/4 of its original container width */
-    max-width: 200px; /* Ensures a reasonable max width */
+    width: 25%;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -74,27 +96,11 @@ main {
 
 /* Certificate Section */
 .certificate {
-    background: #1B4D3E; /* Dark Green */
+    background: #1B4D3E;
     color: white;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-}
-
-/* Certificate Title */
-.certificate h3 {
-    margin-bottom: 10px;
-}
-
-/* Certificate Filter Buttons */
-.buttons button {
-    background: black;
-    color: white;
-    padding: 8px 16px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 /* Footer */
@@ -103,4 +109,6 @@ footer {
     padding: 10px;
     background: #222;
     color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }

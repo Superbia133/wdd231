@@ -1,23 +1,22 @@
-@media screen and (min-width: 768px) {
-    /* Navigation */
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    nav ul li {
-        display: inline;
-        padding: 10px;
-    }
-
-    nav ul {
-        display: flex !important;
-    }
-
-    /* Buttons */
-    .buttons {
+@media screen and (min-width: 1024px) {
+    /* Full Page Layout */
+    body {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        background: black; /* Side columns remain black */
+    }
+
+    /* Centered Content */
+    .container {
+        max-width: 1200px; /* Increased width to take up more space */
+        width: 100%;
+        background: #F8F8F8;
+        padding: 20px;
+    }
+
+    /* Footer should match the main content width */
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }

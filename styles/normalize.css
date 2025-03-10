@@ -1,0 +1,65 @@
+/* Document Level Fixes */
+html {
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%; /* Prevents iOS from resizing text */
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Reset Margin and Padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, pre {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensuring Consistent Typography */
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-rendering: optimizeSpeed;
+}
+
+/* List Style Reset */
+ul, ol {
+    list-style: none;
+}
+
+/* Anchor Tag Reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Button and Input Reset */
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Prevent Overflows */
+main {
+    overflow-x: hidden;
+}
+
+/* Consistent Table Styling */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Hidden Attribute Support */
+[hidden] {
+    display: none !important;
+}
