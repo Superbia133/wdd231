@@ -3,20 +3,20 @@
     body {
         display: flex;
         justify-content: center;
-        background: black; /* Side columns remain black */
+        background: #F8F8F8; /* Keep background light */
+        width: 100%;
     }
 
-    /* Centered Content */
+    /* Full-Width Content */
     .container {
-        max-width: 1200px; /* Increased width to take up more space */
+        max-width: 100%;
         width: 100%;
         background: #F8F8F8;
         padding: 20px;
     }
 
-    /* Footer should match the main content width */
+    /* Footer should also be full width */
     footer {
-        max-width: 1200px;
-        margin: 0 auto;
+        width: 100%;
     }
 }
