@@ -1,7 +1,7 @@
 /* Normalize CSS for consistency */
 html {
     box-sizing: border-box;
-    text-size-adjust: 100%; /* Standard alternative */
+    text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
