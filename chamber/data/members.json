@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Company One",
+        "address": "1234 Main St.",
+        "phone": "(123) 456-7890",
+        "website": "http://companyone.com",
+        "image": "company-one.jpg",
+        "level": 1
+    },
+    {
+        "name": "Company Two",
+        "address": "5678 Elm St.",
+        "phone": "(987) 654-3210",
+        "website": "http://companytwo.com",
+        "image": "company-two.jpg",
+        "level": 2
+    },
+    {
+        "name": "Company Three",
+        "address": "91011 Oak St.",
+        "phone": "(555) 123-4567",
+        "website": "http://companythree.com",
+        "image": "company-three.jpg",
+        "level": 3
+    },
+    {
+        "name": "Company Four",
+        "address": "1213 Pine St.",
+        "phone": "(444) 876-5432",
+        "website": "http://companyfour.com",
+        "image": "company-four.jpg",
+        "level": 2
+    },
+    {
+        "name": "Company Five",
+        "address": "1415 Maple St.",
+        "phone": "(333) 222-1111",
+        "website": "http://companyfive.com",
+        "image": "company-five.jpg",
+        "level": 1
+    },
+    {
+        "name": "Company Six",
+        "address": "1617 Birch St.",
+        "phone": "(222) 555-9999",
+        "website": "http://companysix.com",
+        "image": "company-six.jpg",
+        "level": 3
+    },
+    {
+        "name": "Company Seven",
+        "address": "1819 Cedar St.",
+        "phone": "(111) 777-8888",
+        "website": "http://companyseven.com",
+        "image": "company-seven.jpg",
+        "level": 1
+    }
+]
