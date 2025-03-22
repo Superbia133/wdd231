@@ -18,6 +18,8 @@ header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 header nav ul li {
@@ -51,6 +53,7 @@ h1 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .member-card img {
@@ -80,4 +83,96 @@ footer {
     padding: 10px;
     text-align: center;
     margin-top: 20px;
+}
+
+/* =============================== */
+/* HOME PAGE STYLES BELOW          */
+/* =============================== */
+
+/* Hero Section (no image version) */
+.hero.no-image {
+    background-color: #0077cc;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.hero.no-image .hero-text {
+    position: static;
+    transform: none;
+    background: none;
+    color: white;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Events, Weather, Spotlights */
+.events,
+.weather,
+.spotlights {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.events ul,
+.weather #forecast {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.events li,
+.weather p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Bottom Join CTA Section */
+.bottom-cta {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 2px solid #ddd;
+}
+
+.bottom-cta h2 {
+    margin-bottom: 0.5rem;
+}
+
+.bottom-cta p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero.no-image {
+        padding: 1.5rem 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .member-container {
+        grid-template-columns: 1fr;
+    }
 }
