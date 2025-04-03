@@ -1,3 +1,4 @@
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fff;
 }
 
 header {
@@ -50,6 +53,7 @@ h1 {
 
 .member-card {
     background-color: #f4f4f4;
+    color: #222;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -89,24 +93,30 @@ footer {
 /* HOME PAGE STYLES BELOW          */
 /* =============================== */
 
-/* Hero Section (no image version) */
-.hero.no-image {
-    background-color: #0077cc;
-    color: white;
-    padding: 2rem 1rem;
+.hero {
+    position: relative;
     text-align: center;
     margin-bottom: 2rem;
-    border-radius: 0 0 10px 10px;
 }
 
-.hero.no-image .hero-text {
-    position: static;
-    transform: none;
-    background: none;
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
-/* CTA Button */
 .cta-button {
     display: inline-block;
     background-color: #0077cc;
@@ -118,13 +128,14 @@ footer {
     font-weight: bold;
 }
 
-/* Events, Weather, Spotlights */
 .events,
 .weather,
 .spotlights {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+    color: #222;
+    background-color: #fff;
 }
 
 .events ul,
@@ -139,10 +150,10 @@ footer {
     font-size: 1.1rem;
 }
 
-/* Bottom Join CTA Section */
 .bottom-cta {
     text-align: center;
     background-color: #f4f4f4;
+    color: #222;
     padding: 2rem 1rem;
     margin-top: 2rem;
     border-top: 2px solid #ddd;
@@ -156,15 +167,31 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* Responsive Tweaks */
+#menu-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     header nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
+        background-color: #333;
+        padding: 10px 0;
     }
 
-    .hero.no-image {
-        padding: 1.5rem 1rem;
+    header nav ul.open {
+        display: flex;
+    }
+
+    #menu-button {
+        display: block;
+        margin: 10px;
     }
 
     .cta-button {
