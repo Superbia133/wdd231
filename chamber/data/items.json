@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Company One",
+      "address": "123 Main Street, Ventura",
+      "description": "A trusted local service provider for home improvements.",
+      "image": "company-one.jpg"
+    },
+    {
+      "name": "Company Two",
+      "address": "456 Elm Street, Ventura",
+      "description": "Family-owned business offering tech solutions.",
+      "image": "company-two.jpg"
+    },
+    {
+      "name": "Company Three",
+      "address": "789 Oak Avenue, Ventura",
+      "description": "Farmers market vendor offering organic produce.",
+      "image": "company-three.jpg"
+    },
+    {
+      "name": "Company Four",
+      "address": "101 Pine Road, Ventura",
+      "description": "Award-winning coffee shop with live music nights.",
+      "image": "company-four.jpg"
+    },
+    {
+      "name": "Company Five",
+      "address": "202 Maple Blvd, Ventura",
+      "description": "Specialists in artisan crafts and handmade gifts.",
+      "image": "company-five.jpg"
+    },
+    {
+      "name": "Company Six",
+      "address": "303 Cedar Lane, Ventura",
+      "description": "Creative design agency serving small businesses.",
+      "image": "company-six.jpg"
+    },
+    {
+      "name": "Company Seven",
+      "address": "404 Birch Street, Ventura",
+      "description": "Local print shop offering eco-friendly options.",
+      "image": "company-seven.jpg"
+    },
+    {
+      "name": "Hero Gallery",
+      "address": "505 Hero Street, Ventura",
+      "description": "Modern photography and design studio.",
+      "image": "hero.jpg"
+    }
+  ]
+  
