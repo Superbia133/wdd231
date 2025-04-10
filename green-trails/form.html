@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Trails | Contact</title>
+  <meta name="description" content="Submit your favorite eco-trail or contact the Green Trails team." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>Green Trails</h1>
+    <nav>
+      <button id="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trails.html">Trails</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="form.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form id="contact-form" action="form.html" method="get">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="location">Trail Location:</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="form-data">
+      <!-- This section will display submitted data if JavaScript is used -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Green Trails</p>
+    <a href="attributions.html">Attributions</a>
+  </footer>
+</body>
+</html>
